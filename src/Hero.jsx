@@ -5,18 +5,14 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-center">
         <div className="hero-title">
-          <h2>My React-18 Projects </h2>
+          <h1>My React-18 Projects </h1>
           <p>
-            In my portfolio, you'll find a showcase of my latest endeavors in
-            React-18, powered by <strong>Vite</strong>. Leveraging a robust
-            stack including <strong>Axios</strong> for seamless data fetching,{" "}
-            <strong>Context API</strong> and <strong>React Query</strong> for
-            state management, and <strong>TailwindCSS</strong> for sleek UI,
-            each project is a testament to my proficiency in modern web
-            development. With <strong>React-Router-dom 6.4+</strong> ensuring
-            smooth navigation and <strong>Redux-Toolkit</strong> adding depth to
-            state management, my portfolio encapsulates a diverse range of
-            skills and experiences in the realm of React development.
+            Discover my latest React-18 projects, powered by <em>Vite</em>.
+            Leveraging <em>Axios</em> for data fetching, <em>Context API</em>{" "}
+            and <em>React Query</em> for state management, and{" "}
+            <em>TailwindCSS</em> for UI. With <em>React-Router-dom 6.4+</em> for
+            navigation and <em>Redux-Toolkit</em> for state, showcasing diverse
+            skills in React development."
           </p>
         </div>
 
