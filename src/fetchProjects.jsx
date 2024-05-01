@@ -4,7 +4,7 @@ import { createClient } from "contentful";
 
 var client = createClient({
   space: "w4myl3benv6g",
-  accessToken: "-j22q7FGqopwnpAoHf6AEvqVnpRRGt4Cr5dJhVYTUyo",
+  accessToken: import.meta.env.VITE_API_KEY,
   environment: "master",
 });
 
@@ -24,7 +24,7 @@ const useFetchProjects = () => {
       const updatedArray = response.items.map((item) => {
         return {
           id: item.sys.id,
-          imageURL: item.fields.image.fields.file.url,
+          imageURL: item.fields.image?.fields?.file?.url,
           title: item.fields.title,
           url: item.fields.url,
         };
@@ -42,6 +42,8 @@ const useFetchProjects = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  return { loading, projects };
 };
 
 /* ---
