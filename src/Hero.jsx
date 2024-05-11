@@ -11,7 +11,7 @@ export default function Hero() {
             <em>Axios</em> for data fetching, <em>Context API</em> and <em>React Query</em> for
             state management, and <em>TailwindCSS</em> for UI. With <em>React-Router-dom 6.4+</em>{' '}
             for navigation and <em>Redux-Toolkit</em> for state, showcasing diverse skills in React
-            development."
+            development.
           </p>
         </div>
 
