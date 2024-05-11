@@ -1,16 +1,17 @@
-import useFetchProjects from "./fetchProjects";
+import Loader from './Loader'
+import useFetchProjects from './fetchProjects'
 export default function Projects() {
-  const { loading, projects } = useFetchProjects();
-  console.log("In the Projects Component!");
-  console.log(loading);
-  console.log(projects);
+  const { loading, projects } = useFetchProjects()
+  console.log('In the Projects Component!')
+  console.log(loading)
+  console.log(projects)
 
   if (loading) {
     return (
       <section className="projects">
-        <h2>loading..</h2>.
+        <Loader />
       </section>
-    );
+    )
   }
   return (
     <section className="projects">
@@ -19,8 +20,8 @@ export default function Projects() {
         <div className="title-underline"></div>
       </div>
       <div className="projects-center">
-        {projects.map((project) => {
-          const { id, title, imageURL, url } = project;
+        {projects.map(project => {
+          const { id, title, imageURL, url } = project
           return (
             <a
               href={url}
@@ -36,9 +37,9 @@ export default function Projects() {
               />
               <h5>{title}</h5>
             </a>
-          );
+          )
         })}
       </div>
     </section>
-  );
+  )
 }
